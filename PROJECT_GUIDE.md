@@ -6,7 +6,7 @@ This document details the software architecture, operational flows, and safety i
 
 ## 1. System Architecture
 
-The application implements an **App Shell architecture** utilizing ASP.NET Core Razor Pages for view structures and an independent JavaScript Core layer (`amhs-core.js`) acting as the communication broker. This ensures local rendering stability and error masking when the mobile terminal enters factory Wi-Fi dead zones.
+The application implements an **App Shell architecture** utilising ASP.NET Core Razor Pages for view structures and an independent JavaScript Core layer (`amhs-core.js`) acting as the communication broker. This ensures local rendering stability and error masking when the mobile terminal enters factory Wi-Fi dead zones.
 
 ```mermaid
 graph TD
