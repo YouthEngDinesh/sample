@@ -151,23 +151,16 @@ UI-->>Operator: 完了表示
 ```mermaid
 sequenceDiagram
 
-participant Browser
-
-participant API
+participant Browser as スマートフォン画面
+participant API as ストッカー制御API
 
 loop 3秒毎
 
-Browser->>API
+Browser->>API: GET /api/equipment/status
 
-GET /api/equipment/status
+API-->>Browser: ConnectionStatus<br/>OperationState
 
-API-->>Browser
-
-JSON Response
-
-Browser->>Browser
-
-画面更新
+Browser->>Browser: UI更新
 
 end
 ```
